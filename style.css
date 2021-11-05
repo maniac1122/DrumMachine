@@ -1,0 +1,96 @@
+ @import 
+ url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+ 
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: rgb(31,38,5);
+  background: linear-gradient(90deg, rgba(31,38,5,1) 0%, rgba(159,200,5,0.8)100%);
+}
+.header {
+  padding: 50px;
+  font-size: 3.5em;
+  font-weight:bold;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 10px;
+  color:#ecffb3;
+  text-shadow: -18px 8px 6px rgba(0,0,0,0.3),
+                 0px -5px 35px rgba(0,0,0,0.2);
+}
+.row {
+  display: flex;
+}
+.column {
+  flex: 1;
+  padding: 10px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap:10px; 
+}
+.drum-pad {
+  padding: 25px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  font-weight: bold;
+/*   background-color: #d6ce15;  */
+  background-color:#ccc;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #000;
+}
+
+.drum-pad:hover {
+  background-color: #ff4000;
+  border: none;
+}
+
+.drum-pad:active {
+  background-color: #ff4000;
+  box-shadow: 0 5px #333;
+  transform: translateY(3px);
+  border: none;
+}
+#display{
+  margin: auto;
+  margin-top:  20px;
+  display: flex;
+  width:250px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2em;
+  font-family: 'Lemonada', cursive;
+  background-color: #ccc;
+  -moz-box-shadow:    inset 0 1px 10px #000000;
+   -webkit-box-shadow: inset 0 1px 10px #000000;
+   box-shadow:         inset 0 1px 10px #000000;
+
+}
+
+
+@media (max-width: 544px) {
+  .row {
+   -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height:auto;
+}
